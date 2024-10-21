@@ -16,7 +16,7 @@ def get_posts():
     }
 
 @app.post("/createposts")
-def create_posts(payload:dict = Body(...)): #Body works but we need to 
+def create_posts(payload:dict = Body(...)):
     print(payload)
     return {
         "new post":f"title is {payload['title']}"
